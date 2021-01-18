@@ -31,9 +31,9 @@ services:
       - ./mysql:/var/lib/mysql
     environment:
       MYSQL_DATABASE: lemp
-      MYSQL_USER: diego
-      MYSQL_PASSWORD: diego123
-      MYSQL_ROOT_PASSWORD: Diego123
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root-password
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     networks:
