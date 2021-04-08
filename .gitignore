@@ -1,1 +1,4 @@
 mysql/*
+logs/*
+src/public/*
+*.DS_Store
