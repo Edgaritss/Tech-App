@@ -29,9 +29,9 @@ services:
       - "3306:3306"
     environment:
       MYSQL_DATABASE: lemp
-      MYSQL_USER: username
+      MYSQL_USER: user
       MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: root-password
+      MYSQL_ROOT_PASSWORD: root
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     networks:
@@ -48,3 +48,18 @@ services:
       - "9000:9000"
     networks:
       - lemp
+
+  pma:
+    image: phpmyadmin:latest
+    container_name: lemp_pma
+    ports:
+      - "8080:80"
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      - PMA_ARBITRARY=1
+    networks:
+      - lemp
+
+
