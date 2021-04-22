@@ -27,6 +27,8 @@ services:
     tty: true
     ports:
       - "3306:3306"
+    volumes:
+      - ./data/mysql:/var/lib/mysql
     environment:
       MYSQL_DATABASE: lemp
       MYSQL_USER: user
