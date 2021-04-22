@@ -21,7 +21,7 @@ services:
       - lemp
 
   mysql:
-    image: mysql:latest
+    image: mysql:5.7
     container_name: lemp_mysql
     restart: unless-stopped
     tty: true
