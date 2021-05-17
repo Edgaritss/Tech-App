@@ -1,0 +1,19 @@
+{
+  "name": "lemp-docker",
+  "version": "1.0.0",
+  "description": "This is a composer project for running LEMP (Linux, NGINX, Mysql and PHP) environments in docker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegoquiroz/LEMP-Docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegoquiroz/LEMP-Docker/issues"
+  },
+  "homepage": "https://github.com/diegoquiroz/LEMP-Docker#readme"
+}
